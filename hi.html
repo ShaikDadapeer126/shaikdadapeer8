@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            border: 2px solid red;
+            height: 40px;
+            width: fit-content;
+            font-size: x-large;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+
+        }
+        #btn:hover{
+            border: 4px solid green;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>HIDE and SHOW the content</h1>
+
+    <h2>WELCOME ALL 🎉</h2>
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel id reiciendis, consequatur ipsam, quaerat nihil ducimus aut non optio, eveniet quisquam. Fuga cum quibusdam eos ipsam maxime assumenda, est perferendis earum mollitia impedit illum nulla sequi voluptatibus quas beatae! Earum distinctio et praesentium quidem, vero quo libero ducimus temporibus odio possimus veritatis velit! Repellat, nam tempore sunt consectetur pariatur itaque earum quaerat quo enim unde quae mollitia quibusdam minima fuga dolor a iure modi at perferendis quasi voluptas. Accusamus beatae possimus voluptatum magnam vero tenetur amet qui rem officia, soluta totam, veritatis nisi ipsa commodi ea quo fuga repudiandae. Hic.🙌</p>
+    <button id="btn" onclick="Hide()"> Hide&Show </button>
+
+    <script>
+        // function toggleHide(){
+        //     let btn=document.getElementById('btn');
+        //     let para=document.getElementById('para');
+        //     para.style.display ='none';
+        // }
+
+        function Hide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                alert('this is a warning message')
+                para.style.display ='none';   
+            }
+            else{
+                // alert('did you has the access')
+                confirm('press OK button to show the content')
+                para.style.display ='block';
+            }
+        }
+    </script>
+</body>
+</html>
